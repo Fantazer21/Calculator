@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calculator</title>
+</head>
+
+<body>
+  <main class="main">
+      <div class="calc">
+        <div class="calc-display">
+          <input disabled type="text" id="display" value="0" name="" placeholder="000000000000000000" class="calc-display-input">
+        </div>
+        <div class="calc-buttons">
+          <table class="calc-table">
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="clear-btn btn btn-hover-red" id="ce">ce</button>
+              </td>
+              <td>
+                <button type="button" class="clear-btn btn btn-hover-red" id="c"> c </button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange operation">/</button>
+              </td>
+              <td>
+                <button type="button" class=" operator btn btn-hover-orange operation">*</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn">7</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">8</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">9</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange operation">-</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn">4</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">5</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">6</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange operation">+</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn">1</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">2</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">3</button>
+              </td>
+              <td>
+                <button type="button"  class="operator btn btn-equal btn-hover-orange" id="result">=</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td >
+                <button type="button" class="number btn-hover-green btn b">0</button>
+              </td>
+              <td>
+                <button type="button"  class="btn  btn-hover-orange" id="decimal">.</button>
+              </td>
+            <td>
+                <button type="button" class = "operator btn  btn-hover-orange "  id="sqr">x²</button>
+              </td>
+              
+              <td>
+                <button type="button" class=" btnn  btn-hover-orange "  onclick="display.value = Math.sqrt(display.value)" id="pow">√</button>
+                <button type="button" class=" btnn  btn-hover-orange "  onclick="display.value = (-1)*(display.value)" id="negativeNumber">±</button>
+              </td>
+               
+            
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="description">
+        <h1>
+          Проверяющим:</h1>
+          <p>Кнопка "+/-" работает унарно: сначала вводим число затем жмем "+/-".<br>Например: 3  "+/-"   (-3).</p>
+          <p>Возведение в степень  происходит кнопкой "x²" вначале вводится число затем ->"x²" а после степень.<br> Например: 2  "x²"  4        " = "  16.</p>
+
+      </div>
+
+  </main>
+  <script src="main.js">
+  </script>
+</body>
+</html>
